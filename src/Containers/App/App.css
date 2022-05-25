@@ -1,0 +1,45 @@
+body {
+  background-color: aqua;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #c7254e;
+  height: auto;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  font-family: arial, sans-serif;
+  padding: 5px 10px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: .25rem;
+  height: 200px;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: .9em;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.textarea {
+  margin: auto;
+  display: flex;
+  width: 50%; 
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.code {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  box-sizing: border-box;
+}
