@@ -1,45 +1,110 @@
-body {
-  background-color: aqua;
+* {
+  box-sizing: border-box;
 }
 
-.App {
-  display: flex;
+body {
+  background-color: #1b1340;
+  margin: 0 30px;
+  font-family: inter, sans-serif;
+}
+
+header {
+  text-align:center;
+  margin: 15px;
+}
+
+/* Footer */
+
+.footer {
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+}
+.footer a {
+  color: #fff;
+}
+
+.heart-pulse {
+  -webkit-animation: pulse 2s cubic-bezier(0.4,0,0.6,1) infinite;
+  animation: pulse 2s cubic-bezier(0.4,0,0.6,1) infinite;
+}
+
+/* Structure principale */
+
+.flex-container {
+  display:flex;
   flex-wrap: wrap;
-  background-color: #c7254e;
-  height: auto;
+  box-shadow: 0 10px 20px rgba(109, 74, 255, 0.19), 0 6px 6px rgba(109 ,74 ,255 ,0.23);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flex-child {
+  width: 50%;
+  padding: 15px;
+  height: 80vh;
+  overflow: scroll;
+  display: inline-block;
+  min-width: 500px;   
+}
+
+#markdownRender{
+  background-color: #f5f4f2;
+}
+
+#textarea {
+  background-color:#fff;
 }
 
 textarea {
   display: block;
   width: 100%;
+  height: 99%;
   font-family: arial, sans-serif;
   padding: 5px 10px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border-radius: .25rem;
-  height: 200px;
+  border-radius: .5rem;
+  resize: none;
+  border: 1px solid #6e4affbd;
+}
+
+textarea:focus-visible {
+  outline: 1px solid #6d4aff;
+  box-shadow: 0 0 15px 5px rgba(110, 74, 255, 0.605);
 }
 
 code {
-  padding: 2px 4px;
-  font-size: .9em;
-  color: #c7254e;
-  background-color: #f9f2f4;
-  border-radius: 4px;
-  width: 100%;
+  background-color: #282a36;
+  color: #f8f8f2;
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;
+  padding: 15px;
+  border-radius: 5px;
+  display:inline-block;
 }
 
-.textarea {
-  margin: auto;
-  display: flex;
-  width: 50%; 
-  height: 100%;
-  box-sizing: border-box;
+blockquote {
+  font-weight: 400;
+  font-style: italic;
+  border-left: #e5e7eb solid .25rem;
+  padding-left: .5rem;
+  margin: 16px 20px;
+}
+blockquote p::before {
+  content: open-quote;
+  /* quotes: "\201C""\201D""\2018""\2019"; */
+}
+blockquote p::after {
+  content: close-quote;
+  /* quotes: "\201C""\201D""\2018""\2019"; */
 }
 
-.code {
+.title {
+  background-color: #6d4aff;
+  display: inline-block;
   margin: auto;
-  width: 50%;
-  display: flex;
-  box-sizing: border-box;
+  padding: 15px;
+  box-shadow: 0 10px 20px rgba(109, 74, 255, 0.19), 0 6px 6px rgba(109 ,74 ,255 ,0.23);
+  border-radius: 15px;
+  color:#f3f3f3;
 }
